@@ -17,6 +17,6 @@ The processor support 7 different instructions:  // replace $rd,$rs and $rt fiel
 - a subtract instruction, with opcode 0x02. Syntax opcode,$rs,$t,$rd.Is 4 bytes long.      //rd = rs - rt
 - A Jump instruction, with opcode 0x03. Syntax: opcode, target address. 2 bytes long.
 - A conditionnal branch instruction, with opcode 0x04. It branches to the target address if rs<rt and falls through otherwise. Syntax: opcode,$rs,$rt,target. 4 bytes long.
-- A register-memory Load instruction, with opcode 0x05. Takes the value present at the designated address and loads it into the designated register. Syntax:opcode,$rs,address. 3 bytes long.
-- A register-memory Store instruction, with opcode 0x06. Takes the value from the designtaed register and loads it into memory at designated address. Syntax:opcode,$rs,address. 3 bytes long.
+- A register-memory Load instruction, with opcode 0x05. Takes the value present at the designated address and loads it into the designated register. Syntax: opcode,$rs,address. 3 bytes long.
+- A register-memory Store instruction, with opcode 0x06. Takes the value from the designtaed register and loads it into memory at designated address. Syntax: opcode,$rs,address. 3 bytes long.
 

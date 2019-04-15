@@ -1,0 +1,21 @@
+//simple test processor emulation.
+
+bit width = 8 bits
+register-register, variable width
+max program size 256 bytes.
+opcode field is one byte
+Von-neumann, mixed data and instructions.
+All data is treated as unsigned.
+
+registers : a,b,c,d,e,pc. Respectively $00,$01,$02,$03,$04,$05(PC)
+Jumping to $FF HALTS the processor.
+
+ISA: 
+- Do nothing. Syntax : opcode ($00). 1 byte
+- ADD registers. syntax: opcode($01),$rs,rt,rd. 4 bytes               //rd = rs + rt
+- Substract. syntax: opcode ($02),$rs,$rt,$rd. 4 bytes                //rd = rs - rt
+- JMP : syntax: opcode ($03),target . 2 bytes
+- Branch less than : syntax : opcode ($04),$rs,$rt,target. 4 bytes    //branch to target if rs < rt
+- Load from address,register. syntax : opcode ($05), $rs, address. 3 bytes.
+- Store to address, register. syntax : opcode ($06), $rs, address. 3 bytes.
+

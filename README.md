@@ -27,3 +27,4 @@ Instruction examples:
 - JMP 0xAE would be 03 AE
 - Branch LT a,b,0xAA would be 04 00 01 AA
 
+Written by Luc Boulesteix

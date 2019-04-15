@@ -20,3 +20,10 @@ The processor support 7 different instructions:  // replace $rd,$rs and $rt fiel
 - A register-memory Load instruction, with opcode 0x05. Takes the value present at the designated address and loads it into the designated register. Syntax: opcode,$rs,address. 3 bytes long.
 - A register-memory Store instruction, with opcode 0x06. Takes the value from the designtaed register and loads it into memory at designated address. Syntax: opcode,$rs,address. 3 bytes long.
 
+
+Instruction examples:
+- Load a,0xFF would be 05 00 FF
+- ADD c = a + b would be 01 00 01 02
+- JMP 0xAE would be 03 AE
+- Branch LT a,b,0xAA would be 04 00 01 AA
+

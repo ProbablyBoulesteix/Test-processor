@@ -21,6 +21,7 @@ The processor support 7 different instructions:  // replace $rd,$rs and $rt fiel
 - A register-memory Store instruction, with opcode 0x06. Takes the value from the designtaed register and loads it into memory at designated address. Syntax: opcode,$rs,address. 3 bytes long.
 
 Instructions added in v2:
+
 - Input instruction, with opcode 0x07. Prompts user for number and writes to specificed address. Syntax: opcode,address. 2 bytes.
 -Ouput instruction. Takes the number at a specified address and prints it to console. syntax:opcode,address. 2 bytes.
 

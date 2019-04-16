@@ -27,4 +27,6 @@ Instruction examples:
 - JMP 0xAE would be 03 AE
 - Branch LT a,b,0xAA would be 04 00 01 AA
 
+This is fairly Generic C89 and has no platform specific calls. It should be able to run in any OS. 
+
 Written by Luc Boulesteix

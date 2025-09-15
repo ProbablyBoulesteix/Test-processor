@@ -30,4 +30,4 @@ Instruction examples:
 
 This is fairly Generic C89 and has no platform specific calls. It should be able to run in any OS. 
 
-Written by Luc Boulesteix
+Written by Emma Boulesteix
